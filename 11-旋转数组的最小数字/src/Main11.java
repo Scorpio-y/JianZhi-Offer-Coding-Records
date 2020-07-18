@@ -42,6 +42,7 @@ public class Main11{
 		return arr[mid];
 	}
 	
+	// Ë³ĞòËÑË÷×îĞ¡Öµ
 	private static int arrayMinInOrder(int[] arr, int left, int right) {
 		int res = arr[left];
 		for(int i=left+1;i<=right;i++) {
