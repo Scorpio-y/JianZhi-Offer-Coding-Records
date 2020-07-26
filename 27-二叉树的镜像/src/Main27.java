@@ -10,7 +10,7 @@ class TreeNode{
 public class Main27{
 	public static void main(String[] args) {
 		Main27 test = new Main27();
-		TreeNode tree = test.buildTree1();
+		TreeNode tree = test.buildTree();
 		
 		test.printPreOrder(tree);
 		System.out.println();
@@ -31,7 +31,7 @@ public class Main27{
 		return tree;
 	}
 	
-	private TreeNode buildTree1() {
+	private TreeNode buildTree() {
 		TreeNode ret = new TreeNode(8);
 		ret.left = new TreeNode(6);
 		ret.right = new TreeNode(10);
