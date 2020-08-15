@@ -8,10 +8,10 @@ public class Main38{
 	static ArrayList<String> res = new ArrayList<>();
 	
 	public static void main(String[] args) {
-		String str = "abc";
+		String str = "aaaabcdefg";
 		Main38 test = new Main38();
 		test.strPermutation(str);
-		System.out.println(res);
+		System.out.println(res.size());
 	}
 	
 	
@@ -30,7 +30,7 @@ public class Main38{
 		}
 		for(int i=0;i<chars.length;i++) {
 			if(hasUsed[i]) continue;
-			if(i!=0 && chars[i]==chars[i-1] && hasUsed[i-1]) continue;
+			if(i!=0 && chars[i]==chars[i-1] && hasUsed[i-1]) continue;	// hasUsed改为!hasUsed也可以
 			hasUsed[i] = true;
 			s.append(chars[i]);
 			backtracking(chars, hasUsed, s);
